@@ -1,0 +1,92 @@
+Elementos para descritivo das espécies de peixes
+
+O que deve conter: 
+Nome 
+Nome Científico
+Estatuto de conservação
+Habitat
+Reprodução
+Alimentação
+Tamanho Máximo
+Mapa
+(A informação deve ficar em PT e EN)
+
+
+Peixes:
+
+Nome Científico: Luciobarbus bocagei
+Nome Comum: Barbo do Norte, branco-comum
+
+Nome Científico: Anchondrostoma Oligolepis
+Nome Comum: Ruivaco
+
+Nome Científico: Squalius Carolitertii
+Nome Comum: Escalo do Norte
+
+Nome Científico: Cobitis Paludica
+Nome Comum: Verdemã
+
+Nome Científico: Salmo Trutta
+Nome Comum: Truta de Rio
+
+Nome Científico: Atherina Boyeri
+Nome Comum: Peixe-rei
+
+Nome Científico: Gasterosteus Aculeatus
+Nome Comum: Esgana-gata
+
+Nome Científico: Chelon Ramada
+Nome Comum: Muge, tainha
+
+Nome Científico: Pseudochondrostoma Duriense
+Nome Comum: Boga do Norte
+
+Nome Científico: Petromyzon Marinus
+Nome Comum: Lampreia
+
+
+Sites para o projeto:
+https://fontawesome.com/icons?s=solid&m=free
+codepen.io(o mais importante)
+freefrontend.com
+bootstrap
+wordpress
+artguru.ai
+chatgpt
+
+codigo dos pontos scroll:
+<ul class="particles">
+      <span style="--i: 11"></span>
+      <span style="--i: 12"></span>
+      <span style="--i: 13"></span>
+      <span style="--i: 14"></span>
+      <span style="--i: 15"></span>
+      <span style="--i: 16"></span>
+      <span style="--i: 17"></span>
+      <span style="--i: 18"></span>
+      <span style="--i: 19"></span>
+      <span style="--i: 20"></span>
+      <span style="--i: 21"></span>
+      <span style="--i: 11"></span>
+      <span style="--i: 12"></span>
+      <span style="--i: 13"></span>
+      <span style="--i: 14"></span>
+      <span style="--i: 15"></span>
+      <span style="--i: 16"></span>
+      <span style="--i: 17"></span>
+      <span style="--i: 18"></span>
+      <span style="--i: 19"></span>
+      <span style="--i: 20"></span>
+      <span style="--i: 21"></span>
+      <span style="--i: 11"></span>
+      <span style="--i: 12"></span>
+      <span style="--i: 13"></span>
+      <span style="--i: 14"></span>
+      <span style="--i: 15"></span>
+      <span style="--i: 16"></span>
+      <span style="--i: 17"></span>
+      <span style="--i: 18"></span>
+      <span style="--i: 19"></span>
+      <span style="--i: 20"></span>
+      <span style="--i: 21"></span>
+    </ul>

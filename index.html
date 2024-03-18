@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8">
+    <title>LIFE Águeda</title>
+    <link rel="icon" type="image/png" href="imagens/logo tittle.png" sizes="50x50">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="header">
+        <h1 class="project-title">
+          <span class="txt projeto">LIFE</span>
+          <span class="blue-text peixes">Águeda</span>
+        </h1>
+      </div>
+      
+    <div class="language-buttons">
+        <button id="pt-button">PT</button>
+        <button id="en-button">EN</button>
+    </div>
+
+    <div class="bolhas">
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+  </div>
+
+  <div class="wrapper">
+    <i id="left" class="fa-solid fa-angle-left"></i>
+    <div class="carousel">
+      <div class="fish-container">
+            <img id="fish1" src="imagens/barbo_do_norte.jpg" alt="img" draggable="false" data-description="Descrição do Barbo do Norte" onclick="openDialog('1');">
+            <div class="fish-name-overlay"><strong>Barbo-comum</strong></div>
+            <dialog id="dialog1" class="dialog">
+                <button onclick="closeDialog('dialog1');" aria-label="close" class="x"><span style="color: blue;">&#10006;</span></button>
+                <div class="fish-details" id="dialog-description1">
+                    <h2>barbo-comum</h2>
+                    <p><strong class="nome">Nome Científico:</strong> Luciobarbus bocagei</p>
+                    <p><strong class="nome">Habitat:</strong> Prefere zonas de temperatura moderada e com pouca corrente</p>
+                    <p><strong class="nome">Origem:</strong> Endemismo ibérico</p>
+                    <p><strong class="nome">Alimentação:</strong> Alimenta-se de invertebrados bentónicos, material vegetal<br> e detritos</p>
+                    <p><strong class="nome">Tamanho:</strong> 100 cm</p>
+                    <p><strong class="nome">Família:</strong> Cyprinidae</p>
+                </div>
+            </dialog>
+          </div>
+          <div class="fish-container">
+            <img id="fish2" src="imagens/boga_do_norte.jpg" alt="img" draggable="false" data-description="Descrição do Boga do Norte" onclick="openDialog('2');">
+            <div class="aaa"><strong>Boga-do-norte</strong></div>
+            <dialog id="dialog2" class="dialog">
+                <button onclick="closeDialog('dialog2');" aria-label="close" class="x"><span style="color: blue;">&#10006;</span></button>
+                <div class="fish-details" id="dialog-description2">
+                    <h2>Boga-do-norte</h2>
+                    <p><strong class="nome">Nome Científico:</strong> Pseudochondrostoma Duriense</p>
+                    <p><strong class="nome">Habitat:</strong> Prefere zonas de temperatura moderada e com pouca corrente</p>
+                    <p><strong class="nome">Origem:</strong> Endemismo ibérico</p>
+                    <p><strong class="nome">Alimentação:</strong> Alimenta-se de invertebrados bentónicos, material vegetal<br> e detritos</p>
+                    <p><strong class="nome">Tamanho:</strong> 100 cm</p>
+                    <p><strong class="nome">Família:</strong> Cyprinidae</p>
+                </div>
+            </dialog>
+          </div>
+          <div class="fish-container">
+          <img id="fish4" src="imagens/esgana_gata.jpg" alt="img" draggable="false" data-description="Descrição do Barbo do Norte" onclick="openDialog('4');">
+          <div class="bbb"><strong>Esgana-gata</strong></div>
+          <dialog id="dialog4" class="dialog">
+            <button onclick="closeDialog('dialog4');" aria-label="close" class="x"><span style="color: blue;">&#10006;</span></button>
+            <div class="fish-details" id="dialog-description4">
+              <h2>esgana-gata</h2>
+              <p><strong class="nome">Nome Científico:</strong> Gasterosteus Aculeatus</p>
+              <p><strong class="nome">Habitat:</strong> Pode ocorrer em albufeiras</p>
+              <p><strong class="nome">Origem:</strong> Abundante no Norte e Centro, Nsei se posso por assim</p>
+              <p><strong class="nome">Alimentação:</strong> Alimenta-se de pequenos invertebrados aquáticos, especialmente insetos e crustáceos<br> e detritos</p>
+              <p><strong class="nome">Tamanho:</strong> 7 cm</p>
+              <p><strong class="nome">Família:</strong> Gasterosteidae</p>
+            </div>
+          </dialog>
+        </div>
+        <div class="fish-container">
+          <img id="fish5" src="imagens/lampreia.jpg" alt="img" draggable="false" data-description="Descrição do Barbo do Norte" onclick="openDialog('5');">
+          <div class="ccc"><strong>Lampreia</strong></div>
+          <dialog id="dialog5" class="dialog">
+            <button onclick="closeDialog('dialog5');" aria-label="close" class="x"><span style="color: blue;">&#10006;</span></button>
+            <div class="fish-details" id="dialog-description5">
+              <h2>lampreia</h2>
+              <p><strong class="nome">Nome Científico:</strong> Petromyzon marinus</p>
+              <p><strong class="nome">Habitat:</strong> Reproduz-se nos rios e cresce no mar</p>
+              <p><strong class="nome">Origem:</strong> Nativo</p>
+              <p><strong class="nome">Alimentação:</strong> Alimentam-se do sangue, fluídos e músculo do hospedeiro</p>
+              <p><strong class="nome">Tamanho:</strong> 150 cm</p>
+              <p><strong class="nome">Família:</strong> Petromyzontidae</p>
+            </div>
+          </dialog>
+        </div>
+        <div class="fish-container">
+          <img id="fish6" src="imagens/muge_tainha.jpg" alt="img" draggable="false" data-description="Descrição do Barbo do Norte" onclick="openDialog('6');">
+          <div class="ddd"><strong>Tainha</strong></div>
+          <dialog id="dialog6" class="dialog">
+            <button onclick="closeDialog('dialog6');" aria-label="close" class="x"><span style="color: blue;">&#10006;</span></button>
+            <div class="fish-details" id="dialog-description6">
+              <h2>Tainha</h2>
+              <p><strong class="nome">Nome Científico:</strong> Chelon ramada</p>
+              <p><strong class="nome">Habitat:</strong> Zonas costeiras, estuarinas e de água doce</p>
+              <p><strong class="nome">Origem:</strong> Atlântico Este, Mar Mediterrâneo e parte do Mar Negro</p>
+              <p><strong class="nome">Alimentação:</strong> Alimenta-se de pequenos invertebrados e algas</p>
+              <p><strong class="nome">Tamanho:</strong> 75 cm</p>
+              <p><strong class="nome">Família:</strong> Mugilidae</p>
+            </div>
+          </dialog>
+        </div>
+        <div class="fish-container">
+          <img id="fish7" src="imagens/peixe_rei.jpg" alt="img" draggable="false" data-description="Descrição do Barbo do Norte" onclick="openDialog('7');">
+          <div class="eee"><strong>Peixe-rei</strong></div>
+          <dialog id="dialog7" class="dialog">
+            <button onclick="closeDialog('dialog7');" aria-label="close" class="x"><span style="color: blue;">&#10006;</span></button>
+            <div class="fish-details" id="dialog-description7">
+              <h2>Peixe-rei</h2>
+              <p><strong class="nome">Nome Científico:</strong> Atherina boyeri</p>
+              <p><strong class="nome">Habitat:</strong> Águas salobras ou marinhas, mas pode ocorrer em água doce</p>
+              <p><strong class="nome">Origem:</strong> Not Founded</p>
+              <p><strong class="nome">Alimentação:</strong> Alimenta-se de pequenos curstáceos, analídeos, moluscos e larvas de peixe</p>
+              <p><strong class="nome">Tamanho:</strong> 15 cm</p>
+              <p><strong class="nome">Família:</strong> Atherinidae</p>
+            </div>
+          </dialog>
+        </div>
+        <div class="fish-container">
+        <img id="fish8" src="imagens/ruivaco.jpg" alt="img" draggable="false" data-description="Descrição do Barbo do Norte" onclick="openDialog('8');">
+        <div class="fff"><strong>Ruivaco</strong></div>
+        <dialog id="dialog8" class="dialog">
+          <button onclick="closeDialog('dialog8');" aria-label="close" class="x"><span style="color: blue;">&#10006;</span></button>
+          <div class="fish-details" id="dialog-description8">
+            <h2>Ruivaco, pardelha</h2>
+            <p><strong class="nome">Nome Científico:</strong> Achondrostoma oligolepis</p>
+            <p><strong class="nome">Habitat:</strong> Troço inferior do rio, corrente fraca a moderada, fundo arenoso e vegetação aquática abundante</p>
+            <p><strong class="nome">Origem:</strong> Endemismo lusitânico</p>
+            <p><strong class="nome">Alimentação:</strong> Alimenta-se de pequenos invertebrados e outros itens alimentares</p>
+            <p><strong class="nome">Tamanho:</strong> 18 cm</p>
+            <p><strong class="nome">Família:</strong> Leuciscidae</p>
+          </div>
+        </dialog>
+      </div>
+      <div class="fish-container">
+        <img id="fish9" src="imagens/truta_de_rio.jpg" alt="img" draggable="false" data-description="Descrição do Barbo do Norte" onclick="openDialog('9');">
+        <div class="ggg"><strong>Truta-de-rio</strong></div>
+        <dialog id="dialog9" class="dialog">
+          <button onclick="closeDialog('dialog9');" aria-label="close" class="x"><span style="color: blue;">&#10006;</span></button>
+          <div class="fish-details" id="dialog-description9">
+            <h2>Truta-de-rio</h2>
+            <p><strong class="nome">Nome Científico:</strong> Salmo trutta</p>
+            <p><strong class="nome">Habitat:</strong> Rios de águas frias e bem oxigenadas com corrente moderada a forte, o ecótipo migrador também ocorre nas zonas estuarinas e costeiras</p>
+            <p><strong class="nome">Origem:</strong> Espécie nativa que ocorre em bacias hidrográficas Euroasiáticas</p>
+            <p><strong class="nome">Alimentação:</strong> Juvenil - insetos aquáticos e terrestres; Adulto - moluscos, crustáceos e pequenos peixes</p>
+            <p><strong class="nome">Tamanho:</strong> 100 cm</p>
+            <p><strong class="nome">Família:</strong> Salmonidae</p>
+          </div>
+        </dialog>
+      </div>
+      <div class="fish-container">
+        <img id="fish10" src="imagens/verdemã.jpg" alt="img" draggable="false" data-description="Descrição do Barbo do Norte" onclick="openDialog('10');">
+        <div class="hhh"><strong>Verdemã-comum</strong></div>
+        <dialog id="dialog10" class="dialog">
+          <button onclick="closeDialog('dialog10');" aria-label="close" class="x"><span style="color: blue;">&#10006;</span></button>
+          <div class="fish-details" id="dialog-description10">
+            <h2>Verdemã-comum, pardelha</h2>
+            <p><strong class="nome">Nome Científico:</strong> Cobitis paludica</p>
+            <p><strong class="nome">Habitat:</strong> Lótico. Espécie bentónica</p>
+            <p><strong class="nome">Origem:</strong> Endemismo Ibérico, espécie autóctone</p>
+            <p><strong class="nome">Alimentação:</strong> Alimenta-se de larvas de insetos, invertebrados, algas e detritos</p>
+            <p><strong class="nome">Tamanho:</strong> 15 cm (F); 7 cm (M)</p>
+            <p><strong class="nome">Família:</strong> Cobitidae</p>
+          </div>
+        </dialog>
+      </div>
+    </div>
+    <i id="right" class="fa-solid fa-angle-right"></i>
+  </div>
+  <!-- Rodapé -->
+  <footer>
+    <div class="footer-images">
+      <img class="first-image" src="imagens/logo_cmagueda_cinza-removebg-preview.png" alt="Imagem 1">
+      <img class="first-image" src="imagens/logo_cmagueda_cinza-removebg-preview.png" alt="Imagem 1">
+      <img src="imagens/lifeagueda2.png" alt="Imagem 2">
+      <img src="imagens/life.jpg" alt="Imagem 3">
+      <img class="second-image" src="imagens/redenatura2000 2.png" alt="Imagem 4">
+    </div>
+</footer>
+</body>
+</html>

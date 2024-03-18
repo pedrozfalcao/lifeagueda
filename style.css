@@ -1,0 +1,504 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+:root {
+  --vs-primary: 29 92 255;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  padding: 0 35px;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, #04fafd, 5%, #119dff, 50%, #030423);
+}
+
+.wrapper {
+  position: fixed;
+  top: 0;
+  width: 90%;
+  z-index: 1000; /* Certifique-se de que o carousel esteja acima de outros elementos */
+}
+
+.wrapper i {
+  top: 50%;
+  height: 44px;
+  width: 44px;
+  color: #343F4F;
+  cursor: pointer;
+  font-size: 1.15rem;
+  position: absolute;
+  text-align: center;
+  line-height: 44px;
+  background: #63a3f7;
+  border-radius: 50%;
+  transform: translateY(0%);
+  transition: transform 0.1s linear;
+}
+
+.wrapper i:hover {
+  background: #2162da;
+}
+
+.wrapper i:first-child {
+  left: -22px;
+  display: none;
+  z-index: 2;
+}
+
+.wrapper i:last-child {
+  right: -22px;
+  transition: none; /* Remova a transição para evitar o último clique */
+}
+
+.wrapper .carousel {
+  font-size: 0px;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  position: relative;
+}
+
+.carousel.dragging {
+  cursor: grab;
+  scroll-behavior: auto;
+}
+
+.carousel.dragging img {
+  pointer-events: none;
+}
+
+.carousel {
+  position: relative;
+}
+
+.carousel img {
+  margin-top: 65px;
+  height: 700px;
+  object-fit: cover;
+  user-select: none;
+  margin-left: 9.5px;
+  width: calc(100% / 3);
+}
+
+.carousel img:first-child {
+  margin-left: 0px;
+}
+
+/*Nomes dos peixes nas imagens*/
+.fish-container {
+  position: relative;
+  display: inline-block;
+  width: calc(100% / 3);
+  height: 530px; /* Defina uma altura fixa para os contêineres das imagens */
+  margin-right: 15px; /* Adicione margem direita para criar espaçamento entre as imagens */
+  overflow: hidden; /* Adicione overflow para esconder o conteúdo que ultrapassa o contêiner */
+}
+
+.fish-name-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%; /* Ajuste a largura para 100% para alinhar com a imagem */
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.342);
+  color: #000000; /* Cor do texto */
+  font-size: 18px; /* Tamanho da fonte */
+  overflow: hidden; /* Adicione overflow para esconder o conteúdo que ultrapassa o contêiner */
+}
+
+.fish-container:last-child {
+  width: calc(100% / 3 - 35px); /* Ajuste a largura da última imagem */
+}
+
+.fish-container img {
+  width: 100%;
+  height: 100%; /* Defina a altura como 100% para preencher o contêiner */
+  object-fit: cover; /* Manter a proporção da imagem e cortá-la para preencher o contêiner */
+  display: block;
+}
+.aaa {
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+  width: 410px;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.342);
+  color: #000000; /* Cor do texto */
+  font-size: 18px; /* Tamanho da fonte */
+}
+.bbb {
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+  width: 410px;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.342);
+  color: #000000; /* Cor do texto */
+  font-size: 18px; /* Tamanho da fonte */
+}
+.ccc {
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+  width: 410px;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.342);
+  color: #000000; /* Cor do texto */
+  font-size: 18px; /* Tamanho da fonte */
+}
+.ddd {
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+  width: 410px;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.342);
+  color: #000000; /* Cor do texto */
+  font-size: 18px; /* Tamanho da fonte */
+}
+.eee {
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+  width: 410px;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.342);
+  color: #000000; /* Cor do texto */
+  font-size: 18px; /* Tamanho da fonte */
+}
+.fff {
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+  width: 410px;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.342);
+  color: #000000; /* Cor do texto */
+  font-size: 18px; /* Tamanho da fonte */
+}
+.ggg {
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+  width: 410px;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.342);
+  color: #000000; /* Cor do texto */
+  font-size: 18px; /* Tamanho da fonte */
+}
+.hhh {
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+  width: 410px;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.342);
+  color: #000000; /* Cor do texto */
+  font-size: 18px; /* Tamanho da fonte */
+
+}
+
+@media screen and (max-width: 900px) {
+  .carousel img {
+    width: calc(100% / 2);
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .carousel img {
+    width: 100%;
+  }
+}
+
+.language-buttons {
+  position: absolute;
+  top: 10px;
+  right: 74px;
+  z-index: 1001; /* Ajuste o valor de z-index conforme necessário */
+  pointer-events: auto; /* Permitir que os botões detectem eventos de mouse */
+}
+
+.language-buttons button:hover {
+  background: #2162da;
+}
+
+.language-buttons button {
+  margin-left: 10px;
+  margin-right: -5px;
+  padding: 5px 10px;
+  background-color: #63a3f7;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.header {
+  position: fixed;
+  top: 10px;
+  left: 48px;
+  z-index: 3;
+}
+
+.project-title {
+  font-size: 36px;
+  margin: 0;
+}
+
+.project-title .projeto {
+  color: #242121cb;
+}
+
+.project-title .peixes {
+  color: #4682b4;
+}
+
+.fish-details {
+  text-align: left;
+}
+
+.fish-details h2 {
+  font-size: 24px;     
+  color: #1a4379;
+  margin-bottom: 10px;
+}
+
+.fish-details p {
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+.nome{
+  color: #63a3f7;
+}
+
+dialog::backdrop {
+  animation: fadeIn 1s ease both;
+  background: linear-gradient(180deg, #04fafd, 5%, #119dff, 50%, #03042300);
+  z-index: 2;
+  backdrop-filter: blur(10px);
+}
+
+.dialog {
+  max-width: 620px; /* Aumentado em 2cm */
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #dddddd;
+  border-radius: 15px;
+  box-shadow: 0 0 100px rgb(0, 0, 0);
+  max-height: 95vh;
+  word-wrap: break-word; /* Permite que as palavras quebrem para a próxima linha */
+  white-space: pre-wrap;
+  animation: fadeIn 0.3s ease forwards; /* Adicione uma animação de entrada */
+}
+
+.dialog.close {
+  animation: fadeOut 0.3s ease forwards; /* Adicione uma animação de saída */
+}
+
+.dialog .x {
+  filter: grayscale(1);
+  border: none;
+  background: none;
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  transition: ease filter, transform 0.3s;
+  z-index: 2;
+  cursor: pointer;
+  transform-origin: center;
+  font-size: 30px;
+}
+
+.dialog .x:hover {
+  filter: grayscale(0);
+  transform: scale(1.1);
+}
+
+.dialog h2 {
+  font-weight: 600;
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+.dialog p {
+  font-size: 1rem;
+  line-height: 1.3rem;
+  padding: 0.5rem 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+.dialog h2, .dialog p {
+  transition: opacity 0.3s ease; /* Adicione uma transição de opacidade */
+}
+
+.dialog h2:hover, .dialog p:hover {
+  opacity: 0.7; /* Reduza a opacidade ao passar o mouse */
+}
+
+/*bolhas teste*/
+.left-bubbles {
+  left: 0;
+  top: 0;
+}
+
+.bolhas div {
+  height: 60px;
+  width: 60px;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  border-radius: 50px;
+  position: absolute;
+  animation: animate 3s linear infinite; /* Mudança na duração da animação */
+}
+
+.bolhas div .dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 50px;
+  background: #ffffff; /* Cor azul claro */
+  position: absolute;
+  top: 20%;
+  right: 20%;
+}
+
+.bolhas div:nth-child(1) {
+  top: 20%;
+  left: 20%;
+  animation: animate 8s linear infinite;
+}
+.bolhas div:nth-child(2) {
+  top: 60%;
+  left: 80%;
+  animation: animate 10s linear infinite;
+}
+.bolhas div:nth-child(3) {
+  top: 40%;
+  left: 40%;
+  animation: animate 3s linear infinite;
+}
+.bolhas div:nth-child(4) {
+  top: 66%;
+  left: 30%;
+  animation: animate 7s linear infinite;
+}
+.bolhas div:nth-child(5) {
+  top: 90%;
+  left: 10%;
+  animation: animate 9s linear infinite;
+}
+.bolhas div:nth-child(6) {
+  top: 30%;
+  left: 60%;
+  animation: animate 5s linear infinite;
+}
+.bolhas div:nth-child(7) {
+  top: 70%;
+  left: 20%;
+  animation: animate 8s linear infinite;
+}
+.bolhas div:nth-child(8) {
+  top: 75%;
+  left: 60%;
+  animation: animate 10s linear infinite;
+}
+.bolhas div:nth-child(9) {
+  top: 50%;
+  left: 50%;
+  animation: animate 6s linear infinite;
+}
+.bolhas div:nth-child(10) {
+  top: 45%;
+  left: 20%;
+  animation: animate 10s linear infinite;
+}
+.bolhas div:nth-child(11) {
+  top: 10%;
+  left: 90%;
+  animation: animate 9s linear infinite;
+}
+.bolhas div:nth-child(12) {
+  top: 20%;
+  left: 70%;
+  animation: animate 7s linear infinite;
+}
+.bolhas div:nth-child(13) {
+  top: 20%;
+  left: 20%;
+  animation: animate 8s linear infinite;
+}
+.bolhas div:nth-child(14) {
+  top: 60%;
+  left: 5%;
+  animation: animate 6s linear infinite;
+}
+.bolhas div:nth-child(15) {
+  top: 90%;
+  left: 80%;
+  animation: animate 9s linear infinite;
+}
+@keyframes animate {
+  0% {
+    transform: scale(0) translateY(0) rotate(70deg);
+  }
+  100% {
+    transform: scale(1.3) translateY(-100px) rotate(360deg);
+  }
+}
+
+/*footer rodapé*/
+footer {
+  position: relative; /* Defina a posição como relativa */
+  /* Estilos para o rodapé */
+  padding: 445px 770px 0px 0px;
+}
+
+.footer-images {
+  display: flex;
+  justify-content: center; /* Centralize as imagens horizontalmente */
+  align-items: center; /* Centralize as imagens verticalmente */
+  margin-top: 76px;
+}
+
+.footer-images img {
+  max-width: 60px; /* Defina a largura máxima desejada */
+  height: auto; /* Altura automática para manter a proporção */
+  margin: 8px; /* Espaçamento entre as imagens */
+}
+
+.footer-images .first-image {
+  max-width: 100px; /* Largura máxima aumentada para a primeira imagem */
+}
+.footer-images .second-image {
+  max-width: 87px; /* Largura máxima aumentada para a primeira imagem */
+}
+
